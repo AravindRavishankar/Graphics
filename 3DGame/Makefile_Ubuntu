@@ -1,0 +1,5 @@
+all:  my3D
+my3D: 3d.cpp glad.c
+	g++ -O2 -o my3D 3d.cpp glad.c  -L/usr/local/lib -lGLEW -lGLU -lGL -ldrm -lXdamage -lX11-xcb -lxcb-glx -lxcb-dri2 -lxcb-dri3 -lxcb-present -lxcb-sync -lxshmfence -lglfw -lrt -lm -ldl -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lXext -lXrender -lXfixes -lX11 -lpthread -lxcb -lXau -lXdmcp  
+clean:
+	rm my3D

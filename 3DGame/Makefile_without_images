@@ -1,0 +1,11 @@
+all:  my3D
+
+#sample3D: Sample_GL3_3D.cpp glad.c
+#	g++ -o sample3D Sample_GL3.cpp glad.c -lGL -lglfw
+
+my3D: 3d.cpp glad.c
+	g++ -o my3D 3d.cpp glad.c -lGL -lglfw -ldl
+
+clean:
+	rm my3D 
+	#sample3D
